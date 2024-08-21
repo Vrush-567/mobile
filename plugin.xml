@@ -1,0 +1,25 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-videocapture"
+        version="1.0.0">
+    <name>VideoCapturePlugin</name>
+    <description>Cordova Plugin for capturing video and returning a base64 string</description>
+    <license>MIT</license>
+    <keywords>cordova,video,capture</keywords>
+    <repo>https://github.com/Vrush-567/mobile.git</repo>
+    <issue>https://github.com/Vrush-567/mobile/issues</issue>
+
+    <!-- JavaScript module -->
+    <js-module src="www/videoCapturePlugin.js" name="VideoCapturePlugin">
+        <clobbers target="window.videoCapturePlugin" />
+    </js-module>
+
+    <!-- Android platform specifics -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VideoCapturePlugin">
+                <param name="android-package" value="org.apache.cordova.plugin.VideoCapturePlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/VideoCapturePlugin.java" target-dir="src/org/apache/cordova/plugin/" />
+    </platform>
+</plugin>

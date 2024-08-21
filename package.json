@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-videocapture",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for capturing video and converting to base64",
+  "cordova": {
+    "id": "cordova-plugin-videocapture",
+    "platforms": ["android"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vrush-567/mobile.git"
+  },
+  "keywords": [
+    "cordova",
+    "video",
+    "capture",
+    "base64"
+  ],
+  "author": "Vrush-567",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vrush-567/mobile/issues"
+  },
+  "homepage": "https://github.com/Vrush-567/mobile/blob/main/README.md"
+}
